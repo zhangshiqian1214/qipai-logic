@@ -102,6 +102,7 @@ function M:check_color_chi(cards, min, max, info)
             if info.eye and eye then
                 return false
             end
+            info.eye = eye
 
             if not self:check_mahjong_tbl(key) then
                 return false
